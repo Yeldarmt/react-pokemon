@@ -1,6 +1,7 @@
 {
   "name": "pokemon",
   "version": "1.0.0",
+  "homepage": "http://Yeldarmt.github.io/react-pokemon",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +9,9 @@
     "start": "webpack serve --mode development",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +37,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.8.7",
     "style-loader": "^3.3.2",
