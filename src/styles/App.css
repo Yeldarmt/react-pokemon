@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 840px;
+  margin: 24px;
+}
+
+.pokemon-item {
+  display: flex;
+  padding: 16px;
+  border: 2px solid darkseagreen;
+  margin-top: 16px;
+}
+
+.pokemon-item__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__current {
+  background: red;
+}
